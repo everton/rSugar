@@ -7,16 +7,16 @@ Proxy = Class.new(BasicObject) do
   end
 
   def method_missing(message, *args, &block)
-    # ...
+    ::STDOUT.puts "Before method called"
     ret = @subject.send(message, *args, &block)
-    # ...
+    ::STDOUT.puts "After method called"
     ret
   end
 end
 
 Kkk = Class.new do
   def mmm
-    puts "MMM"
+    puts "from #mmm"
   end
 end
 
