@@ -14,7 +14,8 @@ class Person ### Periodically fetch a stock price.
 
   def name=(name)
     @name = name
-    changed and notify_observers(self)
+    changed
+    notify_observers(self)
   end
 end
 
