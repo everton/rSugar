@@ -1,0 +1,4 @@
+# source "http://rubygems.org"
+
+# 'git://github.com/jeremy/ruby-prof' 
+gem 'ruby-prof', :git => 'git://github.com/wycats/ruby-prof.git'

@@ -1,0 +1,14 @@
+GIT
+  remote: git://github.com/wycats/ruby-prof.git
+  revision: ae2c5ef90981d9f37cd90c9ea1df7655fc3f8be1
+  specs:
+    ruby-prof (0.10.5)
+
+GEM
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-prof!
