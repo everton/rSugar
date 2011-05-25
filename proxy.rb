@@ -28,5 +28,7 @@ pk = Proxy.new k
 pk.mmm
 # => MMM
 
-pk.is_a? Kkk
+puts "-----"
+puts pk.is_a? Kkk
+puts pk.class
 # => true
