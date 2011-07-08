@@ -31,7 +31,7 @@ puts
 
 h5 = Hash.new { [] }
 puts "-" * 25
-puts "   h = Hash.new []"
+puts "   h = Hash.new { [] }"
 puts "   ... h[:a] => #{h5[:a].inspect}"
 puts "   ... h[:b] => #{h5[:b].inspect}"
 h5[:a] << 'aa'
