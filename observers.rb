@@ -3,7 +3,7 @@
 
 require "observer"
 
-class Person ### Periodically fetch a stock price.
+class Person
   include Observable
 
   attr_accessor :name
