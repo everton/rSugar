@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 #-*- coding: utf-8 -*-
 
-
 is_weekday = lambda {|day_of_week, time|
   time.wday == day_of_week
 }.curry  # <<<  #curry
@@ -16,9 +15,9 @@ saturday  = is_weekday[6]
 
 case Time.now
 when sunday  # works using Proc#=== (defined on 1.9 to Proc#call)
-      puts "Day of rest"
+  puts "Day of rest"
 when monday, tuesday, wednesday, thursday, friday
-      puts "Work"
+  puts "Work"
 when saturday
   puts "chores"
 end
