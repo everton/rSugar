@@ -5,7 +5,10 @@ require 'bundler/setup'
 require 'ruby-prof'
 
 result = RubyProf.profile do
-  "a" * 1_000_000
+  100.times do
+    # a = Time.now
+    File.open('delete-me', &:read)
+  end
 end
 
 # RubyProf::GraphPrinter.new(result)
