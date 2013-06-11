@@ -3,7 +3,7 @@
 
 require 'benchmark'
 
-# puts Benchmark.measure { "a"*1_000_000 }
+# puts Benchmark.measure { 1_000_000.times do "a" end }
 
 n = 1000_000
 Benchmark.bm do |x|
